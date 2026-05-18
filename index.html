@@ -312,6 +312,140 @@ footer{background:var(--black-2);color:var(--white)}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 .rv{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
 .rv.in{opacity:1;transform:none}
+
+/* ══ MOBILE ══ */
+@media(max-width:768px){
+
+  /* ── Nav ── */
+  .nav-top{grid-template-columns:auto 1fr auto;padding:0 1rem;height:58px}
+  .nav-left-icons .nav-icon-btn span,.nav-phone-btn span{display:none}
+  .nav-left-icons .nav-icon-btn{padding:.5rem .4rem}
+  .nav-phone-btn{padding:.5rem .7rem}
+  .logo-img-wrap{height:46px}
+  .logo-img-wrap img.logo-banner{height:42px}
+  /* category strip: scrollable, no wrap */
+  .nav-cats{padding:0;height:40px;flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .nav-cats::-webkit-scrollbar{display:none}
+  .nav-cat{padding:.55rem 1rem;font-size:.6rem;letter-spacing:.1em;white-space:nowrap;flex-shrink:0}
+
+  /* ── Hero: text anchored to bottom, gradient from bottom ── */
+  .hero{height:90vh;min-height:560px}
+  .hero-img::after{background:linear-gradient(to top,rgba(0,0,0,.88) 0%,rgba(0,0,0,.45) 50%,rgba(0,0,0,.05) 100%)}
+  .hero-content{padding:1.5rem 1.4rem;align-items:flex-end;padding-bottom:3rem}
+  .hero-inner{max-width:100%}
+  .hero-eyebrow{margin-bottom:.9rem}
+  .hero-eyebrow-text{font-size:.54rem;letter-spacing:.14em}
+  .hero-h1{font-size:clamp(3.2rem,13vw,4.8rem);margin-bottom:1rem;line-height:.88}
+  .hero-sub{font-size:.8rem;line-height:1.8;margin-bottom:1.4rem;max-width:100%}
+  .hero-ctas{flex-direction:column;gap:.55rem;margin-bottom:1.6rem}
+  .hero-ctas .btn{width:100%;justify-content:center;padding:1rem}
+  .hero-proof{gap:.8rem;flex-wrap:wrap;row-gap:.6rem}
+  .hero-proof-n{font-size:1rem}
+  .hero-proof-l{font-size:.5rem}
+  .hero-proof-div{display:none}
+
+  /* ── Sections ── */
+  .section{padding:2.2rem 1.2rem}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:.6rem;margin-bottom:1.6rem;padding-bottom:1rem}
+  .sec-h2{font-size:clamp(1.6rem,6vw,2rem)}
+
+  /* ── Category tiles: first spans full width, rest 2-col ── */
+  .cat-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 180px 180px;gap:2px}
+  .cat-tile:first-child{grid-row:auto;grid-column:1/-1;height:220px}
+  .cat-tile:first-child .cat-name{font-size:1.9rem}
+  .cat-tile-content{padding:1rem 1.2rem}
+  .cat-name{font-size:1.1rem}
+  .cat-eyebrow{font-size:.48rem}
+
+  /* ── Product grid: 2-col, always-visible quick add (no hover) ── */
+  .pgrid{grid-template-columns:repeat(2,1fr)}
+  .pgrid-3{grid-template-columns:repeat(2,1fr)}
+  .pcard-hover-actions{transform:translateY(0);position:static;background:none;padding:.6rem .8rem .8rem;gap:.4rem}
+  .pcard-quick-add{background:var(--black);color:var(--white);font-size:.58rem;padding:.6rem;border-radius:0}
+  .pcard-qv{display:none}
+  .pcard-info{padding:.7rem .8rem .4rem}
+  .pcard-name{font-size:.88rem}
+  .pcard-price{font-size:.95rem}
+
+  /* ── Feature banner: stacked, image on top ── */
+  .feature-banner{grid-template-columns:1fr}
+  .fb-img{min-height:300px;position:relative}
+  .fb-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center}
+  .fb-content{padding:2.2rem 1.4rem 2.5rem}
+  .fb-content::before{font-size:5rem}
+  .fb-h2{font-size:clamp(2rem,9vw,2.8rem);margin-bottom:1rem}
+  .fb-body{font-size:.8rem;margin-bottom:1.4rem}
+  .fb-tags{gap:.35rem;margin-bottom:1.4rem}
+  .fb-tag{font-size:.58rem;padding:.3rem .65rem}
+
+  /* ── Metrics: 2×2 grid ── */
+  .metrics{grid-template-columns:repeat(2,1fr)}
+  .metric{padding:1.8rem 1rem;border-right:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
+  .metric:nth-child(2),.metric:nth-child(4){border-right:none}
+  .metric:nth-child(3),.metric:nth-child(4){border-bottom:none}
+  .metric-n{font-size:2.2rem}
+  .metric-l{font-size:.52rem}
+
+  /* ── Reviews: single column ── */
+  .reviews-grid{grid-template-columns:1fr;gap:.9rem}
+  .review-card{padding:1.4rem}
+
+  /* ── Store: stacked ── */
+  .store-section{grid-template-columns:1fr}
+  .store-left{padding:2.2rem 1.4rem;border-right:none;border-bottom:1px solid rgba(255,255,255,.07)}
+  .store-h2{font-size:clamp(1.8rem,7vw,2.4rem)}
+  .store-right{grid-template-columns:1fr 1fr;grid-template-rows:auto auto 200px}
+  .info-tile{padding:1.1rem 1rem}
+  .info-tile-val{font-size:.75rem}
+
+  /* ── CTA band ── */
+  .cta-band{padding:3rem 1.4rem}
+  .cta-band-h2{font-size:clamp(2rem,9vw,3rem)}
+  .cta-band-btns{flex-direction:column;align-items:stretch;gap:.6rem}
+  .cta-band-btns .btn{width:100%;justify-content:center}
+
+  /* ── Shop page ── */
+  .shop-header{padding:1.6rem 1.2rem 1.2rem}
+  .shop-title{font-size:clamp(1.8rem,7vw,2.4rem)}
+  .filter-section{padding:0;overflow-x:auto}
+  .filter-inner{min-width:max-content;padding:0 1rem}
+  .filter-label{display:none}
+  .sort-bar{padding:.8rem 1.2rem}
+
+  /* ── Modal → bottom sheet ── */
+  .mscrim{padding:0;align-items:flex-end;padding-top:3rem}
+  .modal{grid-template-columns:1fr;max-height:92vh;border-radius:16px 16px 0 0;overflow:hidden}
+  .modal::before{content:'';display:block;width:36px;height:4px;background:var(--gray-200);border-radius:2px;position:absolute;top:10px;left:50%;transform:translateX(-50%);z-index:20}
+  .modal-img-wrap{min-height:240px;max-height:280px}
+  .modal-body{padding:1.4rem 1.4rem 2rem;overflow-y:auto}
+  .modal-name{font-size:1.3rem}
+  .modal-price{font-size:1.3rem}
+  .modal-desc{font-size:.75rem;margin-bottom:.8rem}
+  .modal-perks{gap:.8rem;margin-bottom:.8rem}
+  .modal-x{top:.7rem;right:.7rem;width:32px;height:32px}
+
+  /* ── Cart drawer: full width ── */
+  .drawer{width:100%;max-width:100%;border-radius:0}
+
+  /* ── Footer: single column ── */
+  .ft-top{padding:.7rem 1.2rem;text-align:center;flex-direction:column;gap:.2rem;font-size:.6rem}
+  .ft-grid{grid-template-columns:1fr;gap:0;padding:0;border-bottom:none}
+  .ft-col{border-bottom:1px solid rgba(255,255,255,.07)}
+  .ft-col-h{padding:1.1rem 1.4rem;margin:0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:.6rem}
+  .ft-col-h::after{content:'+';font-size:1rem;color:rgba(255,255,255,.3);font-weight:300;transition:transform .2s}
+  .ft-col.open .ft-col-h::after{transform:rotate(45deg)}
+  .ft-col-links{max-height:0;overflow:hidden;transition:max-height .3s ease;padding:0 1.4rem}
+  .ft-col.open .ft-col-links{max-height:300px;padding:0 1.4rem .8rem}
+  .ft-brand{padding:1.4rem;border-bottom:1px solid rgba(255,255,255,.07)}
+  .ft-bottom{padding:1.2rem 1.4rem;flex-direction:column;align-items:flex-start;gap:.6rem}
+}
+
+@media(max-width:390px){
+  .hero-h1{font-size:clamp(2.8rem,12vw,3.8rem)}
+  .cat-grid{grid-template-rows:200px 160px 160px}
+  .cat-tile:first-child{height:200px}
+  .pgrid,.pgrid-3{grid-template-columns:repeat(2,1fr)}
+}
 </style>
 </head>
 <body>
@@ -735,34 +869,40 @@ footer{background:var(--black-2);color:var(--white)}
     <span class="ft-top-text"><strong>FREE IN-STORE ALTERATIONS</strong> on Every Purchase &nbsp;·&nbsp; <strong>BIG & TALL</strong> Sizes in Stock &nbsp;·&nbsp; <strong>WALK-INS</strong> Always Welcome</span>
   </div>
   <div class="ft-grid">
-    <div>
+    <div class="ft-brand">
       <div class="ft-logo-main">Suits to Impress</div>
       <div class="ft-logo-rule"></div>
       <p class="ft-tagline">Men's Clothing, Formalwear & Accessories<br/>Events · Parties · Wedding · Prom · Quinceañera<br/>Asheboro, NC · Est. 2005</p>
     </div>
-    <div>
-      <p class="ft-col-h">Shop</p>
-      <button class="ft-link" onclick="filt('Suits')">Suits</button>
-      <button class="ft-link" onclick="filt('Tuxedos')">Tuxedos</button>
-      <button class="ft-link" onclick="filt('Shoes')">Shoes</button>
-      <button class="ft-link" onclick="filt('Accessories')">Accessories</button>
-      <button class="ft-link" onclick="filt('Tuxedos')">Prom 2026</button>
+    <div class="ft-col">
+      <p class="ft-col-h" onclick="ftToggle(this)">Shop</p>
+      <div class="ft-col-links">
+        <button class="ft-link" onclick="filt('Suits')">Suits</button>
+        <button class="ft-link" onclick="filt('Tuxedos')">Tuxedos</button>
+        <button class="ft-link" onclick="filt('Shoes')">Shoes</button>
+        <button class="ft-link" onclick="filt('Accessories')">Accessories</button>
+        <button class="ft-link" onclick="filt('Tuxedos')">Prom 2026</button>
+      </div>
     </div>
-    <div>
-      <p class="ft-col-h">Occasions</p>
-      <button class="ft-link" onclick="filt('Suits')">Weddings</button>
-      <button class="ft-link" onclick="filt('Tuxedos')">Prom & Homecoming</button>
-      <button class="ft-link" onclick="filt('Suits')">Quinceañeras</button>
-      <button class="ft-link" onclick="filt('Suits')">Church Events</button>
-      <button class="ft-link" onclick="filt('Suits')">Father–Daughter</button>
+    <div class="ft-col">
+      <p class="ft-col-h" onclick="ftToggle(this)">Occasions</p>
+      <div class="ft-col-links">
+        <button class="ft-link" onclick="filt('Suits')">Weddings</button>
+        <button class="ft-link" onclick="filt('Tuxedos')">Prom & Homecoming</button>
+        <button class="ft-link" onclick="filt('Suits')">Quinceañeras</button>
+        <button class="ft-link" onclick="filt('Suits')">Church Events</button>
+        <button class="ft-link" onclick="filt('Suits')">Father–Daughter</button>
+      </div>
     </div>
-    <div>
-      <p class="ft-col-h">Contact</p>
-      <p class="ft-link" style="cursor:default">1437 E Dixie Dr, Ste 435</p>
-      <p class="ft-link" style="cursor:default">Asheboro, NC 27203</p>
-      <a href="tel:+13366296294" class="ft-link">(336) 629-6294</a>
-      <a href="tel:+13369641960" class="ft-link">(336) 964-1960</a>
-      <a href="https://instagram.com/suitstoimpress" target="_blank" class="ft-link">@suitstoimpress</a>
+    <div class="ft-col">
+      <p class="ft-col-h" onclick="ftToggle(this)">Contact</p>
+      <div class="ft-col-links">
+        <p class="ft-link" style="cursor:default">1437 E Dixie Dr, Ste 435</p>
+        <p class="ft-link" style="cursor:default">Asheboro, NC 27203</p>
+        <a href="tel:+13366296294" class="ft-link">(336) 629-6294</a>
+        <a href="tel:+13369641960" class="ft-link">(336) 964-1960</a>
+        <a href="https://instagram.com/suitstoimpress" target="_blank" class="ft-link">@suitstoimpress</a>
+      </div>
     </div>
   </div>
   <div class="ft-bottom">
@@ -991,6 +1131,13 @@ const obs=new IntersectionObserver(entries=>{
   });
 },{threshold:.04});
 document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+
+// Footer accordion (mobile only)
+function ftToggle(hdr){
+  if(window.innerWidth>768)return;
+  const col=hdr.parentElement;
+  col.classList.toggle('open');
+}
 
 // Init
 renderFeat();
