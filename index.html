@@ -189,7 +189,7 @@ img{display:block;max-width:100%}
 .review-text{font-size:.8rem;line-height:2;color:var(--gray-600);margin-bottom:1.2rem;font-style:italic}
 .review-author{font-family:var(--font-head);font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gray-400);font-weight:500}
 .review-verified{display:inline-flex;align-items:center;gap:.3rem;font-size:.52rem;color:var(--red);font-weight:500;margin-top:.3rem}
-.review-verified::before{content:'✓';font-weight:700}
+.review-verified svg{width:11px;height:11px;flex-shrink:0}
 
 /* ══ STORE SECTION ══ */
 .store-section{display:grid;grid-template-columns:1fr 1.6fr;background:var(--black);min-height:480px}
@@ -359,7 +359,8 @@ footer{background:var(--black-2);color:var(--white)}
     <button class="nav-cat" onclick="filt('Tuxedos');setNavCat(this)">Tuxedos</button>
     <button class="nav-cat" onclick="filt('Shoes');setNavCat(this)">Shoes</button>
     <button class="nav-cat" onclick="filt('Accessories');setNavCat(this)">Accessories</button>
-    <button class="nav-cat nav-cat-red" onclick="filt('Tuxedos');setNavCat(this)">🎓 Prom 2026</button>
+    <button class="nav-cat nav-cat-red" onclick="filt('Tuxedos');setNavCat(this)">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:4px"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>Prom 2026</button>
   </div>
 </div>
 
@@ -384,7 +385,7 @@ footer{background:var(--black-2);color:var(--white)}
         </div>
         <div class="hero-proof">
           <div class="hero-proof-item">
-            <div class="hero-proof-n">4.7<span class="r">★</span></div>
+            <div class="hero-proof-n">4.7<span class="r"><svg width="14" height="14" viewBox="0 0 24 24" fill="#CC1F1F" style="display:inline;vertical-align:middle;margin-left:1px"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></span></div>
             <div class="hero-proof-l">Star Rating</div>
           </div>
           <div class="hero-proof-div"></div>
@@ -475,7 +476,8 @@ footer{background:var(--black-2);color:var(--white)}
     </div>
     <div class="fb-content">
       <div>
-        <p class="fb-label">✦ Prom Season 2026</p>
+        <p class="fb-label">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" style="display:inline;vertical-align:middle;margin-right:5px"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>Prom Season 2026</p>
         <h2 class="fb-h2">YOUR BEST<br/>PROM NIGHT<br/><em>STARTS HERE.</em></h2>
         <p class="fb-body">Suit or tux, shirt, tie, shoes, pocket square — all in one visit. Dean and the team have been dressing Asheboro's young men for over 20 years.</p>
         <div class="fb-tags">
@@ -498,7 +500,7 @@ footer{background:var(--black-2);color:var(--white)}
   <!-- METRICS -->
   <div class="metrics rv">
     <div class="metric">
-      <div class="metric-n">4.7<sup>★</sup></div>
+      <div class="metric-n">4.7<sup><svg width="13" height="13" viewBox="0 0 24 24" fill="#CC1F1F" style="display:inline;vertical-align:middle"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></sup></div>
       <div class="metric-l">Star Rating</div>
     </div>
     <div class="metric">
@@ -523,28 +525,52 @@ footer{background:var(--black-2);color:var(--white)}
         <h2 class="sec-h2">What Asheboro Says</h2>
       </div>
       <div style="display:flex;align-items:center;gap:.5rem">
-        <span style="font-size:1.2rem;color:var(--red)">★★★★★</span>
+        <span style="display:inline-flex;gap:2px;color:var(--red)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+        </span>
         <span style="font-size:.72rem;color:var(--gray-400);font-weight:500">4.7 / 5 · 45 reviews</span>
       </div>
     </div>
     <div class="reviews-grid rv">
       <div class="review-card">
-        <div class="review-stars">★★★★★</div>
+        <div class="review-stars" style="display:flex;gap:2px">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+        </div>
         <p class="review-text">"Dean helped my son find the perfect prom tux in under an hour. Alterations were done same day. We'll never go anywhere else for formalwear."</p>
         <div class="review-author">Marcus T. — Asheboro, NC</div>
-        <div class="review-verified">Verified Purchase · Prom Tuxedo</div>
+        <div class="review-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Purchase · Prom Tuxedo</div>
       </div>
       <div class="review-card">
-        <div class="review-stars">★★★★★</div>
+        <div class="review-stars" style="display:flex;gap:2px">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+        </div>
         <p class="review-text">"The whole wedding party came in together. Dean handled everything — groom's suit to all eight groomsmen. Prices are unbeatable for the quality."</p>
         <div class="review-author">DeShawn M. — Randolph County</div>
-        <div class="review-verified">Verified Purchase · Wedding Party</div>
+        <div class="review-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Purchase · Wedding Party</div>
       </div>
       <div class="review-card">
-        <div class="review-stars">★★★★★</div>
+        <div class="review-stars" style="display:flex;gap:2px">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+        </div>
         <p class="review-text">"Been coming here for church events for years. They always have my size in Big & Tall. No other store in the area even comes close."</p>
         <div class="review-author">Robert J. — Asheboro, NC</div>
-        <div class="review-verified">Verified Purchase · Church Event</div>
+        <div class="review-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Purchase · Church Event</div>
       </div>
     </div>
   </section>
@@ -556,7 +582,7 @@ footer{background:var(--black-2);color:var(--white)}
       <h2 class="store-h2">RANDOLPH MALL,<br/><em>ASHEBORO NC</em></h2>
       <p class="store-body">We've been dressing Asheboro since 2005. Walk in any day — no appointment, no pressure, always a warm welcome.</p>
       <div class="store-ctas">
-        <a href="tel:+13366296294" class="btn btn-red">📞 Call (336) 629-6294</a>
+        <a href="tel:+13366296294" class="btn btn-red"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="flex-shrink:0"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>Call (336) 629-6294</a>
         <a href="https://www.instagram.com/suitstoimpress" target="_blank" class="btn btn-outline-white btn-sm">Follow on Instagram</a>
       </div>
     </div>
@@ -568,7 +594,7 @@ footer{background:var(--black-2);color:var(--white)}
       <div class="store-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.6!2d-79.7996!3d35.7071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885366a8ff6f7c7f%3A0x0!2s1437%20E%20Dixie%20Dr%2C%20Asheboro%2C%20NC%2027203!5e0!3m2!1sen!2sus!4v1" allowfullscreen="" loading="lazy"></iframe>
         <div class="store-map-overlay">
-          <p class="store-map-addr">📍 1437 E Dixie Dr, Suite 435 · Asheboro, NC 27203 · Randolph Mall</p>
+          <p class="store-map-addr" style="display:flex;align-items:center;gap:.4rem"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="flex-shrink:0"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>1437 E Dixie Dr, Suite 435 · Asheboro, NC 27203 · Randolph Mall</p>
         </div>
       </div>
     </div>
@@ -653,7 +679,7 @@ footer{background:var(--black-2);color:var(--white)}
         <span class="subtotal-lbl">Subtotal</span>
         <span class="subtotal-val" id="cartTotal">$0</span>
       </div>
-      <p class="cart-note">✓ Free in-store alterations &nbsp;·&nbsp; Free pickup at Randolph Mall</p>
+      <p class="cart-note" style="display:flex;align-items:center;gap:.3rem"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" style="flex-shrink:0;color:var(--red)"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Free in-store alterations &nbsp;·&nbsp; Free pickup at Randolph Mall</p>
       <button class="btn btn-red btn-checkout-full">Proceed to Checkout</button>
       <button class="btn-continue-full" onclick="toggleCart()">Continue Shopping</button>
     </div>
@@ -773,7 +799,9 @@ const PRODUCTS=[
 
 let cart=[],selSz=null,curP=null,shopF='All',sortMode='default';
 
-function stars(n){return'★'.repeat(n)+'☆'.repeat(5-n)}
+const starFilled='<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>';
+const starEmpty='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>';
+function stars(n){return'<span style="display:inline-flex;gap:1px">'+starFilled.repeat(n)+starEmpty.repeat(5-n)+'</span>';}
 
 function card(p){
   return`<div class="pcard" onclick="openModal(${p.id})" style="position:relative">
@@ -909,7 +937,7 @@ function addFromModal(){
   if(!curP)return;
   if(curP.sizes.length>1&&!selSz){
     const lbl=document.getElementById('mSzLbl');
-    lbl.textContent='⚠ Please select a size';
+    lbl.innerHTML='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:middle;margin-right:3px"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>Please select a size';
     lbl.style.color='var(--red)';
     return;
   }
